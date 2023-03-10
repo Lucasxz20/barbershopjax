@@ -1,0 +1,111 @@
+.tabela{
+    padding: 40px;
+    background-color: #C8C99F;
+    display: flex;
+    border:3px solid black;
+    box-shadow: 5px 5px 5px rgb(99, 98, 98);
+    border-radius: 10px;
+   
+}
+
+.texto-tabela {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: #F1F2CA;
+    margin: 10px;
+    width: 300px;
+    height: 70px;
+  
+}
+ 
+.hud{
+  margin-top: 10rem;
+    
+}
+.serviços{
+    font-size: 40px;
+    
+}
+.hora{
+ font-size: 30px;
+}
+
+.horarios{
+     
+    display: inline;
+
+    }
+
+.horarios div {
+
+    background-color: #F1F2CA;
+    border: black 2px solid;
+    text-align: center;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.parte{
+
+    display: flex;
+  
+}
+
+.local{
+
+    margin: 50px;
+}
+
+/* Tablets */
+@media only screen and (max-width: 950px) {
+    .tabela {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .texto-tabela {
+      width: 100%;
+      margin: 10px 0;
+    }
+    
+    .horarios {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    .horarios div {
+      width: 40%;
+      margin: 10px;
+    }
+    
+    .parte {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .local {
+      margin: 20px 0;
+    }
+  }
+  
+  /* Celulares */
+  @media only screen and (max-width: 480px) {
+    .serviços {
+      font-size: 30px;
+    }
+    
+    .hora {
+      font-size: 20px;
+    }
+    
+    .texto-tabela {
+      font-size: 14px;
+    }
+    
+    .horarios div {
+      width: 80%;
+    }
+  }
